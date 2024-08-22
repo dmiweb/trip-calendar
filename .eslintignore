@@ -1,0 +1,6 @@
+dist
+coverage
+doc
+webpack.*.js
+e2e
+__mocks__

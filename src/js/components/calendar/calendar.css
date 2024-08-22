@@ -1,0 +1,60 @@
+.widget-calendar {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+
+.calendar {
+  position: absolute;
+  padding: 15px;
+  border: 1px solid grey;
+  border-top: none;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.select-day {
+  outline: 2px solid #dc3545;
+  outline-offset: -2px;
+}
+
+.current-day {
+  background-color: #fa7a87;
+}
+
+.disable {
+  color: gray;
+}
+
+caption {
+  position: relative;
+  padding-top: 10px;
+  border: 1px solid grey;
+  border-bottom: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: #ffffff;
+}
+
+.back {
+  position: absolute;
+  left: 30px;
+  cursor: pointer;
+}
+.next {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
+th {
+  font-weight: 100;
+}
+
+td {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}

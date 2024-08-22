@@ -1,0 +1,222 @@
+.container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 410px;
+  padding: 10px;
+  background-image: url("./train-station.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-search-ticket {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-search-ticket__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 100;
+  transform: scale(1, 1.2);
+}
+
+.select-location-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  margin: 20px 0 15px;
+}
+
+.sync-tikets-btn {
+  width: 35px;
+  height: 35px;
+  background-image: url("./sync-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.sync-tikets-btn:hover {
+  transform: rotate(90deg);
+}
+
+.sync-tikets-btn:active {
+  animation-name: rotation;
+  animation-duration: 0.2s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.select-location {
+  width: 100%;
+}
+
+.select-location__title {
+  display: block;
+  margin-bottom: 3px;
+  transform: scale(1, 1.2);
+}
+
+.select-location__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  outline: none;
+}
+
+.select-location__departure {
+  width: 90%;
+}
+
+.selected-age-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.select-age {
+  width: 46%;
+}
+
+.select-age__title {
+  display: inline-block;
+  margin-bottom: 3px;
+  transform: scale(1, 1.2);
+}
+
+.select-age__control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35px;
+  background-color: #ffffff;
+}
+
+.select-age__dec-btn {
+  width: 15px;
+  height: 15px;
+  border: 1px solid grey;
+  text-align: center;
+  line-height: 1;
+  color: grey;
+  cursor: pointer;
+}
+
+.select-age__inc-btn {
+  width: 15px;
+  height: 15px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 1;
+  color: red;
+  cursor: pointer;
+}
+
+.select-age__count-passenger {
+  font-size: 18px;
+  color: grey;
+}
+
+.option-arrival {
+  display: block;
+  width: 35px;
+}
+
+.option-arrival__checkbox {
+  position: absolute;
+  right: 10px;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.option-arrival__custom-checkbox::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #696969;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.option-arrival__checkbox:checked+.option-arrival__custom-checkbox::before {
+  content: "";
+  background-image: url("./check-mark.png");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+
+.select-date__one-date {
+  display: block;
+}
+
+.select-date__two-date {
+  display: none;
+}
+
+.select-date__title {
+  display: block;
+  margin-bottom: 3px;
+  transform: scale(1, 1.2);
+}
+
+.select-date__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  cursor: pointer;
+}
+
+.error-date {
+  position: absolute;
+  width: 300px;
+  padding-left: 5px;
+  box-shadow: 0 0 3px;
+  background-color: #ffffff;
+  color: red;
+}
+
+.form-search__btn-submit {
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  border: none;
+  font-size: 21px;
+  font-weight: 100;
+  background-color: #dc3545;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-search__btn-submit:active {
+  background-color: #fa7a87;
+}
